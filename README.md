@@ -11,5 +11,6 @@ Descrição dos requisitos da atividade:
  Demonstração do projeto: 
 
 
+<img src="https://github.com/bertiGrazi/calculadora/blob/main/assest/calculadoraJavaScript_GraETay.gif" width="290" height="530">
 
  
