@@ -13,10 +13,29 @@ function apagarNumero() {
 }
 
 function calcular() {
+    fazerRequisicao()
     var resultado = document.getElementById('resultado').innerHTML;
     if(resultado) {
         document.getElementById('resultado').innerHTML = eval(resultado);
     } else {
         document.getElementById('resultado').innerHTML = "Null"
     }
+}
+
+function fazPost(url, body) {
+    console.log("Body=", body)
+} 
+
+function fazerRequisicao() {
+    let url = "https://dweet.io/dweet/for/calculadoraIFSP"
+
+    let resultado = document.querySelector('#resultado').innerHTML
+
+    console.log(resultado)
+
+    body = {
+        "resultado": resultado
+    }
+
+    fazPost() 
 }
