@@ -44,13 +44,17 @@ function fazerRequisicao() {
 
     let numero1 = document.getElementById("numero1").value
     let numero2 = document.getElementById("numero2").value
+    let botao = document.querySelector("button").value
 
     console.log(numero1)
     console.log(numero2)
+    console.log(botao)
 
     body = {
         "numero1": numero1,
-        "numero2": numero2
+        "numero2": numero2,
+        "botao": botao,
     }
+
     fazPost(url, body)
 }
