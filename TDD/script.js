@@ -1,6 +1,8 @@
 var numero1 = document.querySelector('#numero1')
 var numero2 = document.querySelector('#numero2')
+var raiz = document.querySelector('#raizQuadrada')
 var resultado = document.querySelector('span')
+
 
 function somar() {
     fazerRequisicao()
@@ -21,6 +23,12 @@ function dividir() {
     fazerRequisicao()
     resultado.innerHTML = parseInt(numero1.value) / parseInt(numero2.value)
 }
+
+function raizQuadrada() {
+    resultado.innerHTML = Math.sqrt(raiz.value)
+}
+
+
 
 function fazPost(url, body) {
     console.log("Body=", body)
